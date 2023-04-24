@@ -50,6 +50,8 @@ export class LayoutService {
 
     overlayOpen$ = this.overlayOpen.asObservable();
 
+    title = "KTC Crypto Currency";
+
     onMenuToggle() {
         if (this.isOverlay()) {
             this.state.overlayMenuActive = !this.state.overlayMenuActive;

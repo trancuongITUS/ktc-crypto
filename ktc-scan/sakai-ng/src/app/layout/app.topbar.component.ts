@@ -16,5 +16,8 @@ export class AppTopBarComponent {
 
     @ViewChild('topbarmenu') menu!: ElementRef;
 
-    constructor(public layoutService: LayoutService) { }
+    constructor(public layoutService: LayoutService) { 
+        console.log(layoutService.config.colorScheme);
+    }
+
 }
